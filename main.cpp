@@ -1,6 +1,9 @@
-#include <iostream>
-
+#include "dServer.h"
+//-----------------------------//
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    dServer Server;
+    Server.init(50000);
+    Server.start();
+
     return 0;
 }
